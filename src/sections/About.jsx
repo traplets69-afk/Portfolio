@@ -51,7 +51,7 @@ const About = () => {
     </p>
 
 <a
-  href='public/assets/Resume(Suarez,Kyrstian).pdf'         // path to your PDF (public folder)
+  href='/assets/Resume(Suarez,Kyrstian).pdf'         // path to your PDF (public folder)
   download="Kyrstian_Suarez_Resume.pdf"
   className="w-full"
 >
@@ -80,7 +80,7 @@ const About = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
         {/* Grid 3 */}
         <div className="grid-container h-[200px]">
-          <img src="public/assets/Building1.png" alt="grid-3" className="w-full h-full object-contain" />
+          <img src="/assets/Building1.png" alt="grid-3" className="w-full h-full object-contain" />
           <div>
             <p className="grid-headtext text-center">Site Engineer</p>
             <p className="grid-subtext text-center">
@@ -91,7 +91,7 @@ const About = () => {
 
         {/* Grid 4 */}
         <div className="grid-container h-[200px]">
-          <img src="public/assets/Building3.png" alt="grid-4" className="w-full h-full object-contain" />
+          <img src="/assets/Building3.png" alt="grid-4" className="w-full h-full object-contain" />
           <div>
             <p className="grid-headtext text-center">Estimator</p>
             <p className="grid-subtext text-center">
@@ -105,7 +105,7 @@ const About = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
         {/* Grid 5 */}
         <div className="grid-container h-[266px]">
-          <img src="public/assets/Building2.png" alt="grid-5" className="w-full h-full object-contain" />
+          <img src="/assets/Building2.png" alt="grid-5" className="w-full h-full object-contain" />
           <div>
             <p className="grid-headtext text-center">Draftsman</p>
             <p className="grid-subtext text-center">
@@ -116,7 +116,7 @@ const About = () => {
 
         {/* Grid 6 */}
         <div className="grid-container h-[266px]">
-          <img src="public/assets/Bulding4.jpg" alt="grid-6" className="w-full h-full object-contain" />
+          <img src="/assets/Bulding4.jpg" alt="grid-6" className="w-full h-full object-contain" />
           <div>
             <p className="grid-headtext text-center">Surveyor</p>
             <p className="grid-subtext text-center">
