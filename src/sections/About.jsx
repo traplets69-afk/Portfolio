@@ -51,12 +51,13 @@ const About = () => {
     </p>
 
 <a
-  href='/assets/Resume(Suarez,Kyrstian).pdf'         // path to your PDF (public folder)
+  href="/assets/Resume_Suarez_Kyrstian.pdf"
   download="Kyrstian_Suarez_Resume.pdf"
   className="w-full"
 >
   <Button name="Hire Me" isBeam containerClass="w-full mt-2" />
 </a>
+
   </div>
 </div>
 
