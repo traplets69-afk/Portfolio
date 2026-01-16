@@ -22,16 +22,16 @@ const Contact = () => {
 
     emailjs
       .send(
-        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+        'service_yp4vxdm',
+        'template_k0jj8gj',
         {
           from_name: form.name,
-          to_name: 'JavaScript Mastery',
+          //to_name: 'Krystian Suarez',
           from_email: form.email,
-          to_email: 'sujata@jsmastery.pro',
+          //to_email: 'krystnjhnry@gmail.com',
           message: form.message,
         },
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY,
+        'KsNp8-VUmDV7pSknb',
       )
       .then(
         () => {
@@ -65,7 +65,7 @@ const Contact = () => {
   };
 
   return (
-    <section className="c-space my-20" id="contact">
+    <section className="c-space my-20"  >
       {alert.show && <Alert {...alert} />}
 
       <div className="relative min-h-screen flex items-center justify-center flex-col">
@@ -104,6 +104,7 @@ const Contact = () => {
                 placeholder="ex., johndoe@gmail.com"
               />
             </label>
+    
 
             <label className="space-y-3">
               <span className="field-label">Your message</span>

@@ -33,7 +33,19 @@ const WorkExperience = () => {
               {workExperiences.map((item, index) => (
                 <div
                   key={index}
-                  onClick={() => setAnimationName(item.animation.toLowerCase())}
+                 onClick={() => {
+  // Set animation only if it exists
+  if (item.animation) {
+    setAnimationName(item.animation.toLowerCase());
+  } else {
+    setAnimationName('idle');
+  }
+
+  // Open Dropbox link in new tab
+  if (item.link) {
+    window.open(item.link, "_blank");
+  }
+}}
                   onPointerOver={() => setAnimationName(item.animation.toLowerCase())}
                   onPointerOut={() => setAnimationName('idle')}
                   className="work-content_container group">

@@ -2,6 +2,8 @@ import { useState } from 'react';
 import Globe from 'react-globe.gl';
 
 import Button from '../components/Button.jsx';
+import { navLinks } from '../constants/index.js';
+const contactLink = navLinks.find(link => link.name === 'Contact');
 
 const About = () => {
   const [hasCopied, setHasCopied] = useState(false);
@@ -15,94 +17,124 @@ const About = () => {
     }, 2000);
   };
 
+
   return (
-    <section className="c-space my-20" id="about">
-      <div className="grid xl:grid-cols-3 xl:grid-rows-6 md:grid-cols-2 grid-cols-1 gap-5 h-full">
-        <div className="col-span-1 xl:row-span-3">
-          <div className="grid-container">
-            <img src="assets/grid1.png" alt="grid-1" className="w-full sm:h-[276px] h-fit object-contain" />
+<section className="c-space my-20" id="about">
+  <div className="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-5 w-full max-w-6xl mx-auto">
 
-            <div>
-              <p className="grid-headtext">Hi, I’m Adrian Hajdin</p>
-              <p className="grid-subtext">
-                With 12 years of experience, I have honed my skills in both frontend and backend dev, creating dynamic
-                and responsive websites.
-              </p>
-            </div>
+    {/* Grid 1 - Left full-height column */}
+    <div className="grid-container h-full flex items-center justify-center">
+  <div className="flex flex-col items-center gap-4 text-center">
+    
+    <div className="rounded-3xl w-[150px] h-[150px] flex justify-center items-center overflow-hidden">
+      <Globe
+        height={150}
+        width={150}
+        backgroundColor="rgba(0, 0, 0, 0)"
+        backgroundImageOpacity={0.5}
+        showAtmosphere
+        showGraticules
+        globeImageUrl="//unpkg.com/three-globe/example/img/earth-night.jpg"
+        bumpImageUrl="//unpkg.com/three-globe/example/img/earth-topology.png"
+        labelsData={[
+          { lat: 40, lng: -100, text: 'Philiphines, Cebu', color: 'white', size: 15 }
+        ]}
+      />
+    </div>
+
+    <p className="grid-headtext">
+      Flexible with time zones & locations
+    </p>
+
+    <p className="grid-subtext max-w-xs">
+      I&apos;m based in Philiphines, Cebu and open to remote work worldwide.
+    </p>
+
+<a
+  href='public/assets/Resume(Suarez,Kyrstian).pdf'         // path to your PDF (public folder)
+  download="Kyrstian_Suarez_Resume.pdf"
+  className="w-full"
+>
+  <Button name="Hire Me" isBeam containerClass="w-full mt-2" />
+</a>
+  </div>
+</div>
+
+    {/* Right column */}
+    <div className="flex flex-col gap-5">
+
+      {/* Grid 2 - Top Centered */}
+      <div className="grid-container h-[266px]">
+        <img src="assets/grid1.png" alt="grid-1" className="w-full h-full object-contain" />
+        <div>
+          <p className="grid-headtext text-center">Hi, I’m Krystian</p>
+          <p className="grid-subtext text-center">
+            I’m a Civil Engineering graduate specializing in Project Management,
+            dedicated to turning complex ideas into well-organized, efficient,
+            and successful projects.
+          </p>
+        </div>
+      </div>
+
+      {/* Bottom grids 3 & 4 side by side */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+        {/* Grid 3 */}
+        <div className="grid-container h-[200px]">
+          <img src="public/assets/Building1.png" alt="grid-3" className="w-full h-full object-contain" />
+          <div>
+            <p className="grid-headtext text-center">Site Engineer</p>
+            <p className="grid-subtext text-center">
+              I love solving problems on-site and overseeing workers to deliver high-quality project results.
+            </p>
           </div>
         </div>
 
-        <div className="col-span-1 xl:row-span-3">
-          <div className="grid-container">
-            <img src="assets/grid2.png" alt="grid-2" className="w-full sm:h-[276px] h-fit object-contain" />
-
-            <div>
-              <p className="grid-headtext">Tech Stack</p>
-              <p className="grid-subtext">
-                I specialize in a variety of languages, frameworks, and tools that allow me to build robust and scalable
-                applications
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div className="col-span-1 xl:row-span-4">
-          <div className="grid-container">
-            <div className="rounded-3xl w-full sm:h-[326px] h-fit flex justify-center items-center">
-              <Globe
-                height={326}
-                width={326}
-                backgroundColor="rgba(0, 0, 0, 0)"
-                backgroundImageOpacity={0.5}
-                showAtmosphere
-                showGraticules
-                globeImageUrl="//unpkg.com/three-globe/example/img/earth-night.jpg"
-                bumpImageUrl="//unpkg.com/three-globe/example/img/earth-topology.png"
-                labelsData={[{ lat: 40, lng: -100, text: 'Rjieka, Croatia', color: 'white', size: 15 }]}
-              />
-            </div>
-            <div>
-              <p className="grid-headtext">I’m very flexible with time zone communications & locations</p>
-              <p className="grid-subtext">I&apos;m based in Rjieka, Croatia and open to remote work worldwide.</p>
-              <Button name="Contact Me" isBeam containerClass="w-full mt-10" />
-            </div>
-          </div>
-        </div>
-
-        <div className="xl:col-span-2 xl:row-span-3">
-          <div className="grid-container">
-            <img src="assets/grid3.png" alt="grid-3" className="w-full sm:h-[266px] h-fit object-contain" />
-
-            <div>
-              <p className="grid-headtext">My Passion for Coding</p>
-              <p className="grid-subtext">
-                I love solving problems and building things through code. Programming isn&apos;t just my
-                profession—it&apos;s my passion. I enjoy exploring new technologies, and enhancing my skills.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div className="xl:col-span-1 xl:row-span-2">
-          <div className="grid-container">
-            <img
-              src="assets/grid4.png"
-              alt="grid-4"
-              className="w-full md:h-[126px] sm:h-[276px] h-fit object-cover sm:object-top"
-            />
-
-            <div className="space-y-2">
-              <p className="grid-subtext text-center">Contact me</p>
-              <div className="copy-container" onClick={handleCopy}>
-                <img src={hasCopied ? 'assets/tick.svg' : 'assets/copy.svg'} alt="copy" />
-                <p className="lg:text-2xl md:text-xl font-medium text-gray_gradient text-white">adrian@jsmastery.pro</p>
-              </div>
-            </div>
+        {/* Grid 4 */}
+        <div className="grid-container h-[200px]">
+          <img src="public/assets/Building3.png" alt="grid-4" className="w-full h-full object-contain" />
+          <div>
+            <p className="grid-headtext text-center">Estimator</p>
+            <p className="grid-subtext text-center">
+              I’m passionate about construction estimating and turning drawings, quantities, and data into accurate cost projections.
+            </p>
           </div>
         </div>
       </div>
-    </section>
+
+      {/* Bottom grids 5 & 6 side by side */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+        {/* Grid 5 */}
+        <div className="grid-container h-[266px]">
+          <img src="public/assets/Building2.png" alt="grid-5" className="w-full h-full object-contain" />
+          <div>
+            <p className="grid-headtext text-center">Draftsman</p>
+            <p className="grid-subtext text-center">
+              I enjoy transforming ideas into detailed drawings that provide clear visual documentation for clients.
+            </p>
+          </div>
+        </div>
+
+        {/* Grid 6 */}
+        <div className="grid-container h-[266px]">
+          <img src="public/assets/Bulding4.jpg" alt="grid-6" className="w-full h-full object-contain" />
+          <div>
+            <p className="grid-headtext text-center">Surveyor</p>
+            <p className="grid-subtext text-center">
+              By using modern surveying equipment to gather precise measurements and convert them into clear, 
+              dependable survey plans for construction.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
   );
 };
 
 export default About;
+
+   

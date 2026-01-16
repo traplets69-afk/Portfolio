@@ -16,6 +16,11 @@ export const navLinks = [
   },
   {
     id: 4,
+    name: 'Feedbacks',
+    href: '#feedbacks',
+  },
+    {
+    id: 5,
     name: 'Contact',
     href: '#contact',
   },
@@ -24,47 +29,45 @@ export const navLinks = [
 export const clientReviews = [
   {
     id: 1,
-    name: 'Emily Johnson',
-    position: 'Marketing Director at GreenLeaf',
-    img: 'assets/review1.png',
+    name: 'ENGR. Catherine',
+    position: 'Engineer',
+    //img: 'assets/review1.png',
     review:
-      'Working with Adrian was a fantastic experience. He transformed our outdated website into a modern, user-friendly platform. His attention to detail and commitment to quality are unmatched. Highly recommend him for any web dev projects.',
+      '"Hardworking and highly focused on assigned tasks, equipped with strong interpersonal skills."',
   },
   {
     id: 2,
-    name: 'Mark Rogers',
-    position: 'Founder of TechGear Shop',
-    img: 'assets/review2.png',
+    name: 'Mery Jane Bellita',
+    position: 'Secretary',
+//img: 'assets/review2.png',
     review:
-      'Adrian’s expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He’s a true professional! Fantastic work.',
+      '"Executes tasks with precision and attention to detail, consistently completing assignments within tight deadlines."',
   },
-  {
+  /**{
     id: 3,
-    name: 'John Dohsas',
-    position: 'Project Manager at UrbanTech ',
+    name: 'Darren Teoganco',
+    position: 'IT',
     img: 'assets/review3.png',
     review:
       'I can’t say enough good things about Adrian. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.',
   },
   {
     id: 4,
-    name: 'Ether Smith',
-    position: 'CEO of BrightStar Enterprises',
+    name: 'Rhea Mae So',
+    position: 'Busseness Management',
     img: 'assets/review4.png',
     review:
       'Adrian was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend backend dev are top-notch.',
-  },
+  },**/
 ];
 
 export const myProjects = [
   {
-    title: 'Podcastr - AI Podcast Platform',
-    desc: 'Podcastr is a revolutionary Software-as-a-Service platform that transforms the way podcasts are created. With advanced AI-powered features like text-to-multiple-voices functionality, it allows creators to generate diverse voiceovers from a single text input.',
-    subdesc:
-      'Built as a unique Software-as-a-Service app with Next.js 14, Tailwind CSS, TypeScript, Framer Motion and Convex, Podcastr is designed for optimal performance and scalability.',
+    title: 'AutoCad',
+    desc: 'AutoCAD is my preferred software for drafting because it offers exceptional precision, ensuring professional-grade visualizations. It provides a wide range of tools for both 2D and 3D design, allowing me to create detailed and accurate drawings. Its flexible editing features also make it easy to modify or update designs according to client requirements.',
     href: 'https://www.youtube.com/watch?v=zfAb95tJvZQ',
     texture: '/textures/project/project1.mp4',
-    logo: '/assets/project-logo1.png',
+    logo: 'public/assets/Autocadsw.png',
     logoStyle: {
       backgroundColor: '#2A1816',
       border: '0.2px solid #36201D',
@@ -74,34 +77,32 @@ export const myProjects = [
     tags: [
       {
         id: 1,
-        name: 'React.js',
-        path: '/assets/react.svg',
+        name: 'AutoCad',
+        path: '/public/assets/Autocadsw.png',
       },
       {
         id: 2,
-        name: 'TailwindCSS',
-        path: 'assets/tailwindcss.png',
+        name: 'Sketchup',
+        path: '/public/assets/sketchupsw.png',
       },
       {
         id: 3,
-        name: 'TypeScript',
-        path: '/assets/typescript.png',
+        name: 'Googlesw',
+        path: '/public/assets/googlesw.png',
       },
       {
         id: 4,
-        name: 'Framer Motion',
-        path: '/assets/framer.png',
+        name: 'Bluebeamsw',
+        path: '/public/assets/Bluebeamsw.png',
       },
     ],
   },
   {
-    title: 'LiveDoc - Real-Time Google Docs Clone',
-    desc: 'LiveDoc is a powerful collaborative app that elevates the capabilities of real-time document editing. As an enhanced version of Google Docs, It supports millions of collaborators simultaneously, ensuring that every change is captured instantly and accurately.',
-    subdesc:
-      'With LiveDoc, users can experience the future of collaboration, where multiple contributors work together in real time without any lag, by using Next.js and Liveblocks newest features.',
+    title: 'Sketchup',
+    desc: 'In terms of 3D modeling, SketchUp is my top choice because of its beginner-friendly interface and ability to support quick concept development. It also offers a massive 3D Warehouse library filled with furniture, appliances, and other ready-made components that streamline the design process. In addition, its wide range of plugins significantly enhances its capabilities and helps save time.',
     href: 'https://www.youtube.com/watch?v=y5vE8y_f_OM',
     texture: '/textures/project/project2.mp4',
-    logo: '/assets/project-logo2.png',
+    logo: '/public/assets/sketchupsw.png',
     logoStyle: {
       backgroundColor: '#13202F',
       border: '0.2px solid #17293E',
@@ -111,34 +112,32 @@ export const myProjects = [
     tags: [
       {
         id: 1,
-        name: 'React.js',
-        path: '/assets/react.svg',
+        name: 'AutoCad',
+        path: '/public/assets/Autocadsw.png',
       },
       {
         id: 2,
-        name: 'TailwindCSS',
-        path: 'assets/tailwindcss.png',
+        name: 'Sketchup',
+        path: '/public/assets/sketchupsw.png',
       },
       {
         id: 3,
-        name: 'TypeScript',
-        path: '/assets/typescript.png',
+        name: 'Googlesw',
+        path: '/public/assets/googlesw.png',
       },
       {
         id: 4,
-        name: 'Framer Motion',
-        path: '/assets/framer.png',
+        name: 'Bluebeamsw',
+        path: '/public/assets/Bluebeamsw.png',
       },
     ],
   },
   {
-    title: 'CarePulse - Health Management System',
-    desc: 'An innovative healthcare platform designed to streamline essential medical processes. It simplifies patient registration, appointment scheduling, and medical record management, providing a seamless experience for both healthcare providers and patients.',
-    subdesc:
-      'With a focus on efficiency, CarePulse integrantes complex forms and SMS notifications, by using Next.js, Appwrite, Twillio and Sentry that enhance operational workflows.',
+    title: 'Google Earth',
+    desc: 'Google Earth is my go-to tool that provides high-resolution satellite imagery and 3D terrain modeling. I use it to explore project locations, analyze site conditions, and identify the scope and boundaries of proposed work.',
     href: 'https://www.youtube.com/watch?v=lEflo_sc82g',
     texture: '/textures/project/project3.mp4',
-    logo: '/assets/project-logo3.png',
+    logo: '/public/assets/googlesw.png',
     logoStyle: {
       backgroundColor: '#60f5a1',
       background:
@@ -150,34 +149,32 @@ export const myProjects = [
     tags: [
       {
         id: 1,
-        name: 'React.js',
-        path: '/assets/react.svg',
+        name: 'AutoCad',
+        path: '/public/assets/Autocadsw.png',
       },
       {
         id: 2,
-        name: 'TailwindCSS',
-        path: 'assets/tailwindcss.png',
+        name: 'Sketchup',
+        path: '/public/assets/sketchupsw.png',
       },
       {
         id: 3,
-        name: 'TypeScript',
-        path: '/assets/typescript.png',
+        name: 'Googlesw',
+        path: '/public/assets/googlesw.png',
       },
       {
         id: 4,
-        name: 'Framer Motion',
-        path: '/assets/framer.png',
+        name: 'Bluebeamsw',
+        path: '/public/assets/Bluebeamsw.png',
       },
     ],
   },
   {
-    title: 'Horizon - Online Banking Platform',
-    desc: 'Horizon is a comprehensive online banking platform that offers users a centralized finance management dashboard. It allows users to connect multiple bank accounts, monitor real-time transactions, and seamlessly transfer money to other users.',
-    subdesc:
-      'Built with Next.js 14 Appwrite, Dwolla and Plaid, Horizon ensures a smooth and secure banking experience, tailored to meet the needs of modern consumers.',
+    title: 'Bluebeam',
+    desc: 'Bluebeam Revu is a powerful PDF-based collaboration and markup software widely used in architecture, engineering, and construction. I use it to review drawings, annotate plans, and streamline communication across project teams.',
     href: 'https://www.youtube.com/watch?v=PuOVqP_cjkE',
     texture: '/textures/project/project4.mp4',
-    logo: '/assets/project-logo4.png',
+    logo: '/public/assets/Bluebeamsw.png',
     logoStyle: {
       backgroundColor: '#0E1F38',
       border: '0.2px solid #0E2D58',
@@ -187,60 +184,93 @@ export const myProjects = [
     tags: [
       {
         id: 1,
-        name: 'React.js',
-        path: '/assets/react.svg',
+        name: 'AutoCad',
+        path: '/public/assets/Autocadsw.png',
       },
       {
         id: 2,
-        name: 'TailwindCSS',
-        path: 'assets/tailwindcss.png',
+        name: 'Sketchup',
+        path: '/public/assets/sketchupsw.png',
       },
       {
         id: 3,
-        name: 'TypeScript',
-        path: '/assets/typescript.png',
+        name: 'Googlesw',
+        path: '/public/assets/googlesw.png',
       },
       {
         id: 4,
-        name: 'Framer Motion',
-        path: '/assets/framer.png',
+        name: 'Bluebeamsw',
+        path: '/public/assets/Bluebeamsw.png',
       },
     ],
   },
   {
-    title: 'Imaginify - AI Photo Manipulation App',
-    desc: 'Imaginify is a groundbreaking Software-as-a-Service application that empowers users to create stunning photo manipulations using AI technology. With features like AI-driven image editing, a payments system, and a credits-based model.',
-    subdesc:
-      'Built with Next.js 14, Cloudinary AI, Clerk, and Stripe, Imaginify combines cutting-edge technology with a user-centric approach. It can be turned into a side income or even a full-fledged business.',
+    title: 'PlanSwift',
+    desc: 'PlanSwift is a digital takeoff and estimating software designed for construction professionals. I use it to perform accurate material and quantity takeoffs directly from project drawings, allowing for faster and more reliable cost estimation.',
     href: 'https://www.youtube.com/watch?v=Ahwoks_dawU',
     texture: '/textures/project/project5.mp4',
-    logo: '/assets/project-logo5.png',
+    logo: '/public/assets/planswiftsw.png',
     logoStyle: {
       backgroundColor: '#1C1A43',
       border: '0.2px solid #252262',
       boxShadow: '0px 0px 60px 0px #635BFF4D',
     },
     spotlight: '/assets/spotlight5.png',
-    tags: [
+   tags: [
       {
         id: 1,
-        name: 'React.js',
-        path: '/assets/react.svg',
+        name: 'AutoCad',
+        path: '/public/assets/Autocadsw.png',
       },
       {
         id: 2,
-        name: 'TailwindCSS',
-        path: 'assets/tailwindcss.png',
+        name: 'Sketchup',
+        path: '/public/assets/sketchupsw.png',
       },
       {
         id: 3,
-        name: 'TypeScript',
-        path: '/assets/typescript.png',
+        name: 'Googlesw',
+        path: '/public/assets/googlesw.png',
       },
       {
         id: 4,
-        name: 'Framer Motion',
-        path: '/assets/framer.png',
+        name: 'Bluebeamsw',
+        path: '/public/assets/Bluebeamsw.png',
+      },
+    ],
+  },
+   {
+    title: 'Excel',
+    desc: 'Microsoft Excel is a versatile tool I use extensively for cost engineering tasks, including budgeting, cost tracking, and financial analysis. It allows me to organize project data, perform complex calculations, and create dynamic charts and tables for clear visualization of costs and resource allocation.',
+    href: 'https://www.youtube.com/watch?v=Ahwoks_dawU',
+    texture: '/textures/project/project5.mp4',
+    logo: '/public/assets/excel-logo-8033473_1280.png',
+    logoStyle: {
+      backgroundColor: '#1C1A43',
+      border: '0.2px solid #252262',
+      boxShadow: '0px 0px 60px 0px #635BFF4D',
+    },
+    spotlight: '/assets/spotlight5.png',
+   tags: [
+      {
+        id: 1,
+        name: 'AutoCad',
+        path: '/public/assets/Autocadsw.png',
+      },
+      {
+        id: 2,
+        name: 'Sketchup',
+        path: '/public/assets/sketchupsw.png',
+      },
+      {
+        id: 3,
+        name: 'Googlesw',
+        path: '/public/assets/googlesw.png',
+      },
+      {
+        id: 4,
+        name: 'Bluebeamsw',
+        path: '/public/assets/Bluebeamsw.png',
       },
     ],
   },
@@ -260,29 +290,29 @@ export const calculateSizes = (isSmall, isMobile, isTablet) => {
 export const workExperiences = [
   {
     id: 1,
-    name: 'Framer',
-    pos: 'Lead Web Developer',
-    duration: '2022 - Present',
-    title: "Framer serves as my go-to tool for creating interactive prototypes. I use it to bring designs to  life, allowing stakeholders to experience the user flow and interactions before development.",
-    icon: '/assets/framer.svg',
-    animation: 'victory',
+    name: 'Cebu Institute of Technology University (Academic Experience)',
+    pos: 'Draftsman and Cost Estimates',
+    duration: 'Academic Years',
+    title: "(Student)",
+    icon: '/public/assets/citu.png',
+    link: "https://www.dropbox.com/scl/fo/er3oopew75v5hx8levuof/AAlW65ZG7ryed7H2OxlOT8g?rlkey=ij6h87wpvyvl3gpxayzwb9u1i&st=ddescy9x&dl=0",
   },
   {
     id: 2,
-    name: 'Figma',
-    pos: 'Web Developer',
-    duration: '2020 - 2022',
-    title: "Figma is my collaborative design platform of choice. I utilize it to work seamlessly with team members and clients, facilitating real-time feedback and design iterations. Its cloud-based.",
-    icon: '/assets/figma.svg',
-    animation: 'clapping',
+    name: 'Socor Construction Corporation',
+    pos: 'Drafter,Site Engineer,Surveyor,Bidding Officer,and Researcher',
+    duration: '2023 ',
+    title: "(Internship)",
+    icon: '/public/assets/Socorlogosw.png',
+    link: "https://www.dropbox.com/scl/fo/zk39sxltmhgkx24tvc78a/AJrbnRlmOWbxcCFT6RPFc3c?rlkey=itaobf5b52oyzqe0wlx5pr2v6&st=r8rgvt9l&dl=0",
   },
   {
     id: 3,
-    name: 'Notion',
-    pos: 'Junior Web Developer',
-    duration: '2019 - 2020',
-    title: "Notion helps me keep my projects organized. I use it for project management, task tracking, and as a central hub for documentation, ensuring that everything from design notes to.",
-    icon: '/assets/notion.svg',
-    animation: 'salute',
+    name: 'ZK Home Hardware Trading',
+    pos: 'Draftsman,Sales Representative, Canvassing Officer,and Site Supervisor',
+    duration: '2021 - 2022 ',
+    title: "(Working Student)",
+    icon: '/public/assets/zksw.png',
+    link: "https://www.dropbox.com/scl/fo/ij3y09t21c2j4pc41toq5/ABf7f9sghcCpISh8w80D5es?rlkey=j2ljqxnzm3f1kmtvzq6o87pro&st=f1auuxki&dl=0",
   },
 ];

@@ -2,7 +2,7 @@ import { clientReviews } from '../constants/index.js';
 
 const Clients = () => {
   return (
-    <section className="c-space my-20">
+    <section className="c-space my-20" id="feedbacks">
       <h3 className="head-text">Hear from My Clients</h3>
 
       <div className="client-container">
@@ -13,7 +13,7 @@ const Clients = () => {
 
               <div className="client-content">
                 <div className="flex gap-3">
-                  <img src={item.img} alt="reviewer" className="w-12 h-12 rounded-full" />
+{/*<img src={item.img} alt="reviewer" className="w-12 h-12 rounded-full" />*/}
                   <div className="flex flex-col">
                     <p className="font-semibold text-white-800">{item.name}</p>
                     <p className="text-white-500 md:text-base text-sm font-light">{item.position}</p>
